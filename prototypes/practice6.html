@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Лабораторна робота № 6</title>
+    <style>
+        .container {
+            float: left;
+        }
+
+        .row {
+            margin-top: 10px;
+            clear: both;
+            text-align: right;
+        }
+
+        .row label {
+            float: left;
+        }
+
+        .row>input {
+            margin-left: 10px;
+        }
+    </style>
+    <script>
+        // ф-ція для отримання значення по id елементу
+        function getValueById(id) {
+            return document.getElementById(id).value;
+        }
+
+        // ф-ція для встановлення значення по id елементу
+        // append = true вказує, що потрібно доповнити поточне значення 
+        // замість його перезапису
+        function setValueById(id, value, append = false) {
+            let element = document.getElementById(id);
+            element.value = append
+                ? element.value + value
+                : value;
+        }
+
+        // ф-ція яка виконуватиметься при натисканні кнопки 
+        function btnSubmitOnClick() {
+            let firstName = getValueById('txtFirstName');
+            // Ваш код …            
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <label>First Name: </label> <input id="txtFirstName" />
+        </div>
+        <div class="row">
+            <label>Last Name: </label> <input id="txtLastName" />
+        </div>
+        <div class="row">
+            <label>Email: </label> <input id="txtEmail" />
+        </div>
+        <div class="row">
+            <label>Year Of Birth: </label> <input id="txtYearOfBirth" />
+        </div>
+        <div class="row">
+            <input id="btnSubmit" type="button" value="Submit" onclick="btnSubmitOnClick();" />
+        </div>
+        <div class="row">
+            <textarea id="txtResult" cols="35" rows="5"></textarea>
+        </div>
+    </div>
+</body>
+
+</html>
