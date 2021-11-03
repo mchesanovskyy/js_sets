@@ -1,0 +1,17 @@
+.container {
+    float: left;
+}
+
+.row {
+    margin-top: 10px;
+    clear: both;
+    text-align: right;
+}
+
+.row label {
+    float: left;
+}
+
+.row>input {
+    margin-left: 10px;
+}
