@@ -13,7 +13,5 @@ function setValueById(id, value, append = false) {
         : value;
 }
 
-function printMessage(value, append = true, newLine = true) {
-    setValueById('txtResult', newLine ? `${value}\n` : value, append);
-}
+
 
