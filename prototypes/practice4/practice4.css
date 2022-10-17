@@ -1,0 +1,37 @@
+.container {
+    background-color: #7b9eaf;
+    padding: 15px 10px;
+    border-radius: 8px;
+    margin: 10px auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row label {
+    flex-shrink: 3;
+}
+
+.row-reverse {
+    justify-content: flex-end;
+}
+
+textarea {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    cursor: pointer;
+    margin-left: 10px;
+}
