@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Практична робота № 5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="practice5.css" />
+    <script defer src="practice5.js"></script>
+</head>
+
+<body>
+    <form action="javascript:void(0);" class="container">
+        <div class="form-group">
+            <label class="form-group-label" for="LastName">
+                Прізвище:
+            </label>
+            <label class="lbl-error-message"></label>
+            <input id="txtLastName" name="LastName" class="form-input" />
+        </div>
+
+        <div class="form-group">
+            <label class="form-group-label" for="FirstName">
+                Ім'я:
+            </label>
+            <label class="lbl-error-message"></label>
+            <input id="txtFirstName" name="FirstName" class="form-input" />
+        </div>
+
+        <div class="form-group">
+            <label class="form-group-label" for="MiddleName">
+                По батькові:
+            </label>
+            <label class="lbl-error-message"></label>
+            <input id="txtMiddleName" name="MiddleName" class="form-input"/>
+        </div>
+
+        <div class="form-group">
+            <label class="form-group-label" for="Email">
+                Електронна пошта:
+            </label>
+            <label class="lbl-error-message"></label>
+            <input id="txtEmail" name="Email" class="form-input"/>
+        </div>
+
+        <div class="form-group">
+            <label class="form-group-label" for="YearOfBirth">
+                Рік народження:
+            </label>
+            <label class="lbl-error-message"></label>
+            <input id="txtYearOfBirth" name="YearOfBirth" class="form-input" />
+        </div>
+
+        <div class="btn-group-reverse">
+            <input id="btnSubmit" class="btn" type="submit" value="Submit" />
+        </div>
+
+        <textarea id="txtResult" cols="35" rows="5"></textarea>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+label, input, textarea {
+    font-size: 14pt;
+}
+
+.container {
+    background-color: #7b9eaf;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+    border-radius: 8px;
+    margin: 10px auto;
+    width: 50%;
+}
+
+.form-group {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-group-lbl {
+    flex-shrink: 3;
+}
+
+.btn-group-reverse {
+    text-align: right;
+    margin: 10px 0px;
+}
+
+.btn {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.lbl-error-message {
+    color: darkred;
+}
+
+.form-input-error {
+    border: 1px solid darkred;
+}
