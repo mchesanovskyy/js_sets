@@ -26,9 +26,19 @@ function validateAndProcessOnBtnSubmitClick() {
 // перевірити чи всі поля введені 
 // повернути true, якщо всі поля введені
 // повернути false, якщо хоча б одне значення було пропущено
-function validateForEmptyInputs(btnSubmitElement) {    
-    // Ваш код...
-    return true;
+function validateForEmptyInputs(btnSubmitElement) {
+
+    let txtLastNameElem = document.getElementById('txtLastName');
+    let lastName = txtLastNameElem.value;
+
+    let isValid = true;
+
+    if (lastName == '') {
+        showErrorForElement(txtLastNameElem, VALUE_IS_REQUIRED_ERROR_MSG);
+        isValid == false;
+    }
+
+    return isValid;
 }
 
 // перевірити Рік народження на дотримання додаткових вимог 
@@ -36,6 +46,7 @@ function validateForEmptyInputs(btnSubmitElement) {
 // повернути false, якщо хоча б одна вимога НЕ була виконана
 function validateYearOfBirth(btnSubmitElement) {
     // Ваш код... 
+    let currentYear = new Date().getFullYear();
     return true;
 }
 
